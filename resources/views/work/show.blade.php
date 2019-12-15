@@ -26,13 +26,16 @@
                         @endif
                     </div><!--show_top_img-->
                     
-                    @if( !empty($prevWork) )
-                        <a href="/work/{{$prevWork->id}}">prev</a>
-                    @endif
+                    <div class="pagenation">
+                        @if( !empty($prevWork) )
+                            <a href="/work/{{$prevWork->id}}"> << prev</a>
+                        @endif
+                        
+                        @if( !empty($nextWork) )
+                            <a href="/work/{{$nextWork->id}}">next >></a>
+                        @endif
+                    </div><!--pagenation-->
                     
-                    @if( !empty($nextWork) )
-                        <a href="/work/{{$nextWork->id}}">next</a>
-                    @endif
 
                 </div><!--col-sm-12-->
             </div>

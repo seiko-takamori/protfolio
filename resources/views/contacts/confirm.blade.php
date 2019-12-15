@@ -1,15 +1,15 @@
-@extends('layouts.app')
+@extends('layouts.front')
 @section('content')
  
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">お問い合わせ</div>
+        <div class="col-md-12 content">
+            <div class="panel panel-default posts">
+                <h2>Contact</h2>
                 <div class="panel-body">
-                    <p>誤りがないことを確認のうえ送信ボタンをクリックしてください。</p>
+                    <p class="mb-5">誤りがないことを確認のうえ送信ボタンをクリックしてください。</p>
  
-                    <table class="table">
+                    <table class="table contact_table mb-5">
                         <tr>
                             <th>お問い合わせ種類</th>
                             <td>{{ $type }}</td>
@@ -52,8 +52,8 @@
                         @endif
                     @endforeach
  
-                     <input type="submit" name="action" class="btn" value="戻る">
-                     <input type="submit" name="action" class="btn btn-primary" value="送信">
+                     <input type="submit" name="action" class="btn mb-5" value="戻る">
+                     <input type="submit" name="action" class="btn btn-gray mb-5" value="送信">
          
                     {{ csrf_field() }}
                     

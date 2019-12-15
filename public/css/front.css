@@ -24,15 +24,35 @@ body {
 .navbar_under .nav-list a {
   color: #333;
   font-size: 1.3em;
+  opacity: 0.7;
 }
 
 .navbar_under .nav-list a:hover {
-  opacity: 0.8;
+  opacity: 1;
   text-decoration: none;
 }
 
 .content {
   text-align: center;
+}
+
+.content .two_box_wrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: spacebetween;
+          justify-content: spacebetween;
+}
+
+.content .three_box_wrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: spacebetween;
+          justify-content: spacebetween;
+}
+
+.content .panel-default {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 
 .content h2 {
@@ -108,6 +128,12 @@ body {
 
 .header_wrap .nav-list a {
   color: #4d4d4d;
+  opacity: 0.7;
+}
+
+.header_wrap .nav-list a:hover {
+  text-decoration: none;
+  opacity: 1;
 }
 
 @media screen and (max-width: 765px) {
@@ -118,6 +144,7 @@ body {
     display: flex;
     -webkit-box-align: center;
             align-items: center;
+    height: 100vh;
   }
 
   .header_wrap .top_img_box {
@@ -127,11 +154,12 @@ body {
             align-items: center;
     -webkit-box-pack: center;
             justify-content: center;
-    height: 300px;
+    height: 70vh;
   }
 
   .header_wrap .top_img_box img {
     display: block;
+    width: 50%;
   }
 
   .header_wrap .nav-list {
@@ -143,10 +171,27 @@ body {
   .header_wrap .nav-list a {
     color: #4d4d4d;
   }
+
+  .content .two_box_wrap {
+    display: block;
+  }
+
+  .content .three_box_wrap {
+    display: block;
+  }
 }
 
 .posts {
   margin-top: 50px;
+}
+
+.posts .btn-gray {
+  background: #eaeaea;
+}
+
+.posts .contact_table {
+  width: 60%;
+  margin: 0 auto;
 }
 
 .posts .post {
@@ -187,23 +232,50 @@ body {
   cursor: pointer;
 }
 
-footer .navbar-brand {
+.posts .show .pagenation {
+  width: 50%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.posts .show .pagenation a {
+  display: block;
+  color: #4d4d4d;
+  opacity: 0.7;
+}
+
+.posts .show .pagenation a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+footer .footer_box {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: spacebetween;
+          justify-content: spacebetween;
+}
+
+footer .footer_box .navbar-brand {
   width: 10%;
 }
 
-footer .navbar-brand img {
+footer .footer_box .navbar-brand img {
   width: 60%;
 }
 
-footer .nav-list {
+footer .footer_box .nav-list {
   width: 30%;
 }
 
-footer .nav-list a {
+footer .footer_box .nav-list a {
   color: #333;
 }
 
-footer .nav-list a:hover {
+footer .footer_box .nav-list a:hover {
   opacity: 0.8;
   text-decoration: none;
 }

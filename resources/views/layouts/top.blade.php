@@ -71,19 +71,25 @@
             
             {{-- フッターナビ --}}
             <footer>
-                <div class="container d-flex justify-content-between">
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                <div class="container footer-box">
+                    <div><a class="navbar-brand" href="{{ url('/') }}">
                         <img src="{{ asset('img/logo_acots.png') }}" alt="logo">
-                    </a>
-                    <div class="nav-list d-flex justify-content-between">
+                    </a></div>
+                    
+                    <div><div class="nav-list d-flex justify-content-between">
                         <a href="{{ url('/#about') }}">About</a>
                         <a href="{{ url('/#skill') }}">Skill</a>
                         <a href="{{ url('/#work') }}">Work</a>
                         <a href="{{ url('/contact') }}">Contact</a>
-                    </div><!--nav-list-->
-                    <small class="copyright">
+                    </div><!--nav-list--></div>
+                    
+                    
+                    <div><small class="copyright">
                         Copyright©2019 Kyoritsu Computer & Communication Co.,Ltd. All Rights Reserved.
-                    </small>
+                    </small></div>
+                    
+                    
+                    
                 </div><!--container-->
             </footer>
             {{-- ここまでフッターナビ --}}

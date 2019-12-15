@@ -5,8 +5,8 @@
         <div class="row pb-5">
             <div class="col-sm-12 content">
                 <h2 id="about">About</h2>
-                <div class="d-flex justify-content-between">
-                    <div class="col-sm-5 img">
+                <div class="two_box_wrap">
+                    <div class="col-sm-5 img mb-3">
                         <img src="{{ asset('img/img_about.png') }}" alt="about">
                     </div>
                     <div class="col-sm-7">
@@ -22,7 +22,7 @@
         <div class="row pb-5">
             <div class="col-sm-12 content">
                 <h2 id="skill">Skill</h2>
-                <div class="d-flex justify-content-between">
+                <div class="three_box_wrap">
                     <div class="col-sm-4">
                         <img src="{{ asset('img/icon_pen.png') }}" alt="icon">
                         <p class="box-title">企画・デザイン</p>
