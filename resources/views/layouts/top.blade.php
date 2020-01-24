@@ -11,8 +11,8 @@
         <title>@yield('title')</title>
 
         <!-- Scripts -->
-        <script src="{{ secure_asset('js/app.js') }}" defer></script>
-        <script src="{{ secure_asset('js/menu.js') }}" defer></script>
+        <script src="{{ ('js/app.js') }}" defer></script>
+        <script src="{{ ('js/menu.js') }}" defer></script>
 
         <!-- Fonts -->
         <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -20,8 +20,8 @@
 
         <!-- Styles -->
         {{-- Laravel標準で用意されているCSSを読み込みます --}}
-        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ secure_asset('css/front.css') }}" rel="stylesheet">
+        <link href="{{ ('css/app.css') }}" rel="stylesheet">
+        <link href="{{ ('css/front.css') }}" rel="stylesheet">
         
         <!--favicon-->
         <link ref="icon" type="image/png" href="img/favicon.png">
