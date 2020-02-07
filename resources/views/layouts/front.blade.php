@@ -30,7 +30,7 @@
             <nav class="navbar_under">
                 <div class="container d-flex justify-content-between">
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="{{ asset('img/logo_acots.png') }}" alt="logo">
+                        <img src="{{ ('img/logo_acots.png') }}" alt="logo">
                     </a>
                     <div class="nav-list d-flex justify-content-between">
                         <a href="/#about">About</a>
@@ -51,7 +51,7 @@
             <footer>
                 <div class="container d-flex justify-content-between">
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="{{ asset('img/logo_acots.png') }}" alt="logo">
+                        <img src="{{ ('img/logo_acots.png') }}" alt="logo">
                     </a>
                     <div class="nav-list d-flex justify-content-between">
                         <a href="{{ url('/#about') }}">About</a>
