@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -23,7 +24,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
     Route::post('work/edit', 'Admin\WorkController@update');
     Route::get('work/delete','Admin\WorkController@delete');
 });
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -33,3 +34,5 @@ Route::get('work/{id}', 'WorkController@show');
 Route::get('contact', 'ContactsController@index');
 Route::post('contact/confirm', 'ContactsController@confirm');
 Route::post('contact/complete', 'ContactsController@complete');
+
+
