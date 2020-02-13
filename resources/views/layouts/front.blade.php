@@ -13,7 +13,7 @@
 
         <!-- Scripts -->
          {{-- Laravel標準で用意されているJavascriptを読み込みます --}}
-        <script src="{{ ('js/app.js') }}" defer></script>
+        <script src="{{ ('/js/app.js') }}" defer></script>
 
         <!-- Fonts -->
         <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -21,8 +21,8 @@
 
         <!-- Styles -->
         {{-- Laravel標準で用意されているCSSを読み込みます --}}
-        <link href="{{ ('css/app.css') }}" rel="stylesheet">
-        <link href="{{ ('css/front.css') }}" rel="stylesheet">
+        <link href="{{ ('/css/app.css') }}" rel="stylesheet">
+        <link href="{{ ('/css/front.css') }}" rel="stylesheet">
     </head>
     <body>
         <div id="app">
@@ -30,7 +30,7 @@
             <nav class="navbar_under">
                 <div class="container d-flex justify-content-between">
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="{{ ('img/logo_acots.png') }}" alt="logo">
+                        <img src="{{ ('/img/logo_acots.png') }}" alt="logo">
                     </a>
                     <div class="nav-list d-flex justify-content-between">
                         <a href="/#about">About</a>
@@ -51,7 +51,7 @@
             <footer>
                 <div class="container d-flex justify-content-between">
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="{{ ('img/logo_acots.png') }}" alt="logo">
+                        <img src="{{ ('/img/logo_acots.png') }}" alt="logo">
                     </a>
                     <div class="nav-list d-flex justify-content-between">
                         <a href="{{ url('/#about') }}">About</a>
